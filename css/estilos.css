@@ -1,0 +1,39 @@
+body {
+  font-size: 16px;
+}
+.botones {
+  background: #19b5fe;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 0.5em 0em;
+  margin: 0em auto;
+  width: 50%;
+  text-align: center;
+}
+.boton {
+  padding: 0.5em 0.8em;
+}
+.boton:first-child {
+  border-bottom-left-radius: 10px;
+}
+.boton:last-child {
+  border-bottom-right-radius: 10px;
+}
+.boton:hover {
+  background: #2c3e50;
+}
+.proceso {
+  color: #fff;
+  max-width: 400px;
+  position: relative;
+  margin: 1em;
+}
+.tiempo {
+  background: #2c3e50;
+  font-size: 2.5em;
+  text-align: center;
+  padding: 0.5em;
+}
+.wrap {
+  width: 100%;
+}
