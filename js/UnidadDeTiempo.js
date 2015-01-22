@@ -9,7 +9,6 @@ function UnidadDeTiempo(lim){
     else
       posicion = 0;
 
-    return posicion;
   };
 
   this.retroceder = function(){
@@ -19,7 +18,6 @@ function UnidadDeTiempo(lim){
     else
       posicion--;
 
-    return posicion;
   };
 
   this.getPosicion = function(){

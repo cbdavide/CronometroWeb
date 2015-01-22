@@ -1,22 +1,65 @@
+@font-face
+  font-family: 'icomoon';
+  src:url('fonts/icomoon.eot?bi2sry');
+  src:url('fonts/icomoon.eot?#iefixbi2sry') format('embedded-opentype'),
+  url('../fonts/icomoon.woff?bi2sry') format('woff'),
+  url('../fonts/icomoon.ttf?bi2sry') format('truetype'),
+  url('../fonts/icomoon.svg?bi2sry#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+
+[class^="icon-"], [class*=" icon-"]
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -moz-osx-font-smoothing: grayscale;
+
+
+.icon-forward:before
+  content: "\e601";
+
+
+.icon-backward:before
+  content: "\e602";
+
+
+.icon-pause:before
+  content: "\e603";
+
+
+.icon-play:before
+  content: "\e604";
+
 body
   font-size 16px
 .botones
   background #19B5FE
   border-bottom-left-radius 10px
   border-bottom-right-radius 10px
-  padding 0.5em 0em
+  padding 0.6em 0em 0.4em 0em
   margin 0em auto
-  width 50%
+  max-width 37.5%
   text-align center
 .boton
   // background #19B5FE
-  padding 0.5em 0.8em
+  border-top 0.2em solid transparent
+  font-size 1.1em
+  padding 0.6em 0.8em 0.5em 0.8em
+  box-sizing padding-box
   &:first-child
     border-bottom-left-radius 10px
   &:last-child
     border-bottom-right-radius 10px
   &:hover
     background #2C3E50
+    border-top-color #19B5FE
 .proceso
   color white
   max-width 400px
@@ -29,3 +72,7 @@ body
   padding 0.5em
 .wrap
   width 100%
+
+@media screen and (max-width:445px)
+  .botones
+    max-width 55%;
