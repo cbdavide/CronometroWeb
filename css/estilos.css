@@ -33,7 +33,7 @@ body {
   font-size: 16px;
 }
 .botones {
-  background: #19b5fe;
+  background: #049372;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 0.6em 0em 0.4em 0em;
@@ -55,11 +55,11 @@ body {
 }
 .boton:hover {
   background: #2c3e50;
-  border-top-color: #19b5fe;
+  border-top-color: #049372;
 }
 .proceso {
   color: #fff;
-  border-top: 0.5em solid #d91e18;
+  border-top: 0.5em solid #049372;
   max-width: 400px;
   position: relative;
   margin: 1em;

@@ -10,14 +10,16 @@
     <header>
       <h1>Cronómetro</h1>
     </header>
-    <section>
+    <section id="contenido">
+    </section>
+    <script id="cronometro-template" type="x-tmpl-mustache">
       <article class="proceso">
         <div class="tiempo">
-          <span id="horas">00</span>
+          <span id="horas">{{horas}}</span>
           <span>:</span>
-          <span id="minutos">00</span>
+          <span id="minutos">{{minutos}}</span>
           <span>:</span>
-          <span id="segundos">00</span>
+          <span id="segundos">{{segundos}}</span>
         </div>
         <div class="wrap">
           <div class="botones">
@@ -27,7 +29,8 @@
           </div>
         </div>
       </article>
-    </section>
+    </script>
+    <script src="lib/mustache.js"></script>
     <script src="js/UnidadDeTiempo.js"></script>
     <script src="js/Cronometro.js"></script>
     <script src="js/main.js"></script>

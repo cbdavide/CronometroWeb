@@ -1,3 +1,13 @@
+var view = {
+  'horas' : '00',
+  'minutos': '00',
+  'segundos': '00'
+};
+var template = document.getElementById('cronometro-template').innerHTML;
+Mustache.parse(template);
+var rendered = Mustache.render(template,view);
+document.getElementById('contenido').innerHTML = rendered;
+console.log(template);
 //Modo chambon
 //Cronometro
   var crono = new Cronometro();
