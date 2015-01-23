@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,maximun-scale=1,minimun-scale=1" />
+    <meta name="viewport" content="width=device-width,maximun-scale=1,minimun-scale=1 user-scalable=no" />
     <title>Cronometro</title>
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
@@ -13,7 +13,7 @@
     <section id="contenido">
     </section>
     <script id="cronometro-template" type="x-tmpl-mustache">
-      <article class="proceso">
+      <article id={{id_caja}} class="proceso">
         <div class="tiempo">
           <span id={{id_horas}}>{{horas}}</span>
           <span>:</span>
@@ -23,9 +23,9 @@
         </div>
         <div class="wrap">
           <div class="botones">
-            <span class="boton icon-backward" id="retroceder"></span>
-            <span class="boton icon-pause" id="pause"></span>
-            <span class="boton icon-forward" id="avanzar"></span>
+            <span class="boton icon-backward" id={{id_btn_retroceder}}></span>
+            <span class="boton icon-pause disabled" id={{id_btn_pause}}></span>
+            <span class="boton icon-forward" id={{id_btn_avanzar}}></span>
           </div>
         </div>
       </article>

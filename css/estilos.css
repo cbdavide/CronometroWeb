@@ -44,7 +44,8 @@ body {
 .boton {
   border-top: 0.2em solid transparent;
   font-size: 1.1em;
-  padding: 0.6em 0.8em 0.5em 0.8em;
+  margin: -0.15em;
+  padding: 0.6em 0.8em 0.5em 1.02em;
   box-sizing: padding-box;
 }
 .boton:first-child {
@@ -56,6 +57,13 @@ body {
 .boton:hover {
   background: #2c3e50;
   border-top-color: #049372;
+}
+.disabled {
+  background: #6c7a89;
+  border: 0px solid transparent;
+}
+.disabled:hover {
+  background: #6c7a89;
 }
 .proceso {
   color: #fff;
