@@ -1,22 +1,10 @@
-var view = {
-  'horas' : '00',
-  'minutos': '00',
-  'segundos': '00'
-};
-var template = document.getElementById('cronometro-template').innerHTML;
-Mustache.parse(template);
-var rendered = Mustache.render(template,view);
-document.getElementById('contenido').innerHTML = rendered;
-console.log(template);
-//Modo chambon
-//Cronometro
-  var crono = new Cronometro();
-  crono.loop();
-//Labels
-  var label_hora = document.getElementById('horas');
-  var label_minuto = document.getElementById('minutos');
-  var label_segundo = document.getElementById('segundos');
-//Botones
+var cronos = new Cronometro();
+var view = new View(1);
+view.add();
+view.initElementos();
+cronos.setObservador(view);
+cronos.loop();
+// Botones
   var pause = document.getElementById('pause');
   var forward = document.getElementById('avanzar');
   var backward = document.getElementById('retroceder');
@@ -26,16 +14,16 @@ console.log(template);
   backward.addEventListener('click',retroceder);
 //Funciones
   function pausar(){
-    crono.setEstado('pause');
+    cronos.setEstado('pause');
     console.log('pausado');
   };
 
   function avanzar(){
-    crono.setEstado('avanzar');
+    cronos.setEstado('avanzar');
     console.log('Avanzando');
   };
 
   function retroceder(){
-    crono.setEstado('retroceder');
+    cronos.setEstado('retroceder');
     console.log('Retroceder');
   };

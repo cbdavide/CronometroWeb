@@ -15,11 +15,11 @@
     <script id="cronometro-template" type="x-tmpl-mustache">
       <article class="proceso">
         <div class="tiempo">
-          <span id="horas">{{horas}}</span>
+          <span id={{id_horas}}>{{horas}}</span>
           <span>:</span>
-          <span id="minutos">{{minutos}}</span>
+          <span id={{id_minutos}}>{{minutos}}</span>
           <span>:</span>
-          <span id="segundos">{{segundos}}</span>
+          <span id={{id_segundos}}>{{segundos}}</span>
         </div>
         <div class="wrap">
           <div class="botones">
@@ -33,6 +33,7 @@
     <script src="lib/mustache.js"></script>
     <script src="js/UnidadDeTiempo.js"></script>
     <script src="js/Cronometro.js"></script>
+    <script src="js/View.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

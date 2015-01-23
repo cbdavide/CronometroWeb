@@ -3,6 +3,18 @@ function Cronometro(){
   var minutos = new UnidadDeTiempo(60);
   var horas = new UnidadDeTiempo(24);
   var estado = 'pause';
+  var observador;
+
+  this.setObservador = function(observer){
+    observador = observer;
+  };
+
+  var notify = function(){
+    var h = horas.getPosicion(),
+        m = minutos.getPosicion(),
+        s = segundos.getPosicion();
+    observador.update(h,m,s);
+  };
 
   this.setEstado = function(state){
     estado = state;
@@ -22,6 +34,7 @@ function Cronometro(){
         horas.avanzar();
       }
     }
+    notify();
   };
 
   var retroceder = function(){
@@ -34,19 +47,19 @@ function Cronometro(){
         horas.retroceder();
       }
     }
+    notify();
   };
 
   this.loop = function(){
     var interval = window.setInterval(function(){
 
       if(estado != 'pause'){
-        console.log('#YOLO');
         if(estado == 'avanzar'){
           avanzar();
         }else if(estado == 'retroceder'){
           retroceder();
         }
-        console.log(horas.getPosicion()+' : '+minutos.getPosicion()+' : '+segundos.getPosicion());
+        // console.log(horas.getPosicion()+' : '+minutos.getPosicion()+' : '+segundos.getPosicion());
       }
     },1000);
   }
