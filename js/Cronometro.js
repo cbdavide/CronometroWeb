@@ -40,7 +40,7 @@ function Cronometro(){
     var interval = window.setInterval(function(){
 
       if(estado != 'pause'){
-
+        console.log('#YOLO');
         if(estado == 'avanzar'){
           avanzar();
         }else if(estado == 'retroceder'){

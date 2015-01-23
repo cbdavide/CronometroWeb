@@ -59,6 +59,7 @@ body {
 }
 .proceso {
   color: #fff;
+  border-top: 0.5em solid #d91e18;
   max-width: 400px;
   position: relative;
   margin: 1em;
