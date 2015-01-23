@@ -70,7 +70,6 @@ function View(i,crono){
     elementos.btnRetroceder.classList.remove('disabled');
     //Pausar
     cronometro.setEstado('pause');
-    console.log('pausado');
   }
 
   function avanzar(){
@@ -84,7 +83,6 @@ function View(i,crono){
     elementos.btnRetroceder.classList.remove('disabled');
     //Avanzar
     cronometro.setEstado('avanzar');
-    console.log('avanzar');
   }
 
   function retroceder(){
@@ -98,7 +96,6 @@ function View(i,crono){
     elementos.btnRetroceder.classList.add('disabled');
     //Retroceder
     cronometro.setEstado('retroceder');
-    console.log('retroceder')
   }
 
 }
