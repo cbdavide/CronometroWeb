@@ -26,16 +26,18 @@
           <span class="boton icon-forward" id="avanzar"></span>
         </div>
       </article>
-      <article class="tag">
-        <span class="pic">00 : 20 : 10</span>
-      </article>
+      <div id="tag_container"class="tags"></div>
     </section>
-    <script id="cronometro-template" type="x-tmpl-mustache">
+    <script id="tag-template" type="x-tmpl-mustache">
+      <article class="tag">
+        <span class="pic">{{tiempo}}</span>
+      </article>
     </script>
     <script src="lib/mustache.js"></script>
     <script src="js/UnidadDeTiempo.js"></script>
     <script src="js/Cronometro.js"></script>
     <script src="js/View.js"></script>
+    <script src="js/TagView.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

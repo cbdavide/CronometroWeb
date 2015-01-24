@@ -3,7 +3,6 @@ var app = {
 };
 app.add.addEventListener('click',function(){
 
-  // app.contador++;
 });
 function MakeCronometro(){
   var cronometro = new Cronometro();
@@ -17,3 +16,7 @@ function MakeCronometro(){
 
 var cronometro = new MakeCronometro();
 cronometro.init();
+var t1 =  new TagView('00 : 01 : 02');
+t1.init();
+var t2 =  new TagView('00 : 01 : 02');
+t2.init();

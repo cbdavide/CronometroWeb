@@ -98,14 +98,16 @@ header .actions .action-disabled:hover {
   width: 100%;
   z-index: 3;
 }
+.tags {
+  position: relative;
+  top: 102px;
+}
 .tag {
   background: #2c3e50;
   border-top: 2px solid #1e824c;
   font-size: 2em;
   padding: 0.7em;
-  position: relative;
   text-align: center;
-  top: 102px;
 }
 .tag .pic {
   color: #fff;
@@ -115,8 +117,5 @@ header .actions .action-disabled:hover {
   font-size: 2em;
   text-align: center;
   padding: 1em 0em;
-  width: 100%;
-}
-.wrap {
   width: 100%;
 }
