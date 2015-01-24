@@ -38,6 +38,13 @@ function View(crono){
     elementos.btnPausa = document.getElementById(this.view.id_btn_pause);
     elementos.btnAvanzar = document.getElementById(this.view.id_btn_avanzar);
   };
+  this.getTiempo = function(){
+    var horas = elementos.labelHoras.innerHTML;
+    var minutos = elementos.labelMinutos.innerHTML;
+    var segundos = elementos.labelSegundos.innerHTML;
+
+    return horas + ' : ' + minutos + ' : '+ segundos;
+  };
   /**
    * Añadir el listener de los botones
    */

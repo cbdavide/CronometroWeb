@@ -114,6 +114,7 @@ header .actions .action-disabled:hover {
 }
 .tiempo {
   background: #2c3e50;
+  border-bottom: 1px solid #22313f;
   font-size: 2em;
   text-align: center;
   padding: 1em 0em;
