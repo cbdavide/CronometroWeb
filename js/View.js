@@ -1,32 +1,33 @@
-function View(i,crono){
-  var index = i;
+function View(crono){
+  // var index = i;
   var cronometro = crono;
-  var template = document.getElementById('cronometro-template').innerHTML;
+  // var template = document.getElementById('cronometro-template').innerHTML;
   var elementos = {};
   this.view = {
-    'id_caja' : 'cronometro'+index,
-    'horas': '00',
-    'minutos': '00',
-    'segundos': '00',
-    'id_horas': 'ch'+index,
-    'id_minutos': 'cm'+index,
-    'id_segundos': 'cs'+index,
-    'id_btn_retroceder': 'cbr'+index,
-    'id_btn_pause': 'cbp'+index,
-    'id_btn_avanzar': 'cba'+index
+    'id_caja' : 'cronometro',
+    // 'horas': '00',
+    // 'minutos': '00',
+    // 'segundos': '00',
+    'id_horas': 'horas',
+    'id_minutos': 'minutos',
+    'id_segundos': 'segundos',
+    'id_btn_retroceder': 'retroceder',
+    'id_btn_pause': 'pausar',
+    'id_btn_avanzar': 'avanzar'
   };
-  this.rendered = Mustache.render(template,this.view);
+  // this.rendered = Mustache.render(template,this.view);
   this.init = function(){
-    this.print();
+    // this.prin
+
     this.initElementos();
     this.addListener();
   };
-  this.print = function(){
-    //Append de the element in the html
-    var section = document.getElementById('contenido');
-    var temp_section = section.innerHTML;
-    section.innerHTML = temp_section + this.rendered;
-  };
+  // this.print = function(){
+  //   //Append de the element in the html
+  //   var section = document.getElementById('contenido');
+  //   var temp_section = section.innerHTML;
+  //   section.innerHTML = temp_section + this.rendered;
+  // };
   this.initElementos = function(){
     //Labels
     elementos.labelHoras = document.getElementById(this.view.id_horas);

@@ -12,22 +12,46 @@
       <span id="add"class="add icon-plus"></span>
     </header>
     <section id="contenido">
-    </section>
-    <script id="cronometro-template" type="x-tmpl-mustache">
-      <article id={{id_caja}} class="proceso">
+      <article id="cronometro" class="proceso">
         <div class="tiempo">
-          <span class="boton icon-backward" id={{id_btn_retroceder}}></span>
-          <span id={{id_horas}}>{{horas}}</span>
+          <span class="boton icon-backward" id="retroceder"></span>
+          <span id="horas">00</span>
           <span>:</span>
-          <span id={{id_minutos}}>{{minutos}}</span>
+          <span id="minutos">00</span>
           <span>:</span>
-          <span id={{id_segundos}}>{{segundos}}</span>
-          <span class="boton icon-forward" id={{id_btn_avanzar}}></span>
+          <span id="segundos">00</span>
+          <span class="boton icon-forward" id="avanzar"></span>
         </div>
         <div class="botones">
-          <span class="boton icon-pause disabled" id={{id_btn_pause}}></span>
+          <span class="boton icon-pause disabled" id="pausar"></span>
         </div>
       </article>
+      <article class="tag">
+        <sapan class="pic">00 : 20 : 10</sapan>
+      </article>
+      <article class="tag">
+        <sapan class="pic">00 : 45 : 35</sapan>
+      </article>
+      <article class="tag">
+        <sapan class="pic">01 : 00 : 20</sapan>
+      </article>
+      <article class="tag">
+        <sapan class="pic">01 : 00 : 20</sapan>
+      </article>
+      <article class="tag">
+        <sapan class="pic">01 : 00 : 20</sapan>
+      </article>
+      <article class="tag">
+        <sapan class="pic">01 : 00 : 20</sapan>
+      </article>
+      <article class="tag">
+        <sapan class="pic">01 : 00 : 20</sapan>
+      </article>
+      <article class="tag">
+        <sapan class="pic">01 : 00 : 20</sapan>
+      </article>
+    </section>
+    <script id="cronometro-template" type="x-tmpl-mustache">
     </script>
     <script src="lib/mustache.js"></script>
     <script src="js/UnidadDeTiempo.js"></script>

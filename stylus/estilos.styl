@@ -51,8 +51,10 @@ header
   background #22313F
   color white
   overflow hidden
-  position relative
+  position fixed
   top 0
+  width 100%
+  z-index 3
   h1
     margin-left 0.5em
   .add
@@ -83,7 +85,9 @@ header
     right 0
   &:hover
     background #1E824C
-
+#contenido
+  position relative
+  top 81px
 .disabled
   background #6C7A89
   border 0px solid transparent
@@ -91,11 +95,22 @@ header
     background #6C7A89
 .proceso
   color white
-  // max-width 400px
+  position fixed
+  width 100%
+  z-index 3
+.tag
+  background #2C3E50
+  border-top 2px solid #049372
+  padding 1em
   position relative
+  text-align center
+  top 102px
+  .pic
+    color white
+    font-size 2em
+
 .tiempo
   background #2C3E50
-  border 1px solid #22313F
   font-size 2em
   text-align center
   padding 1em 0em

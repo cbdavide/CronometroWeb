@@ -43,8 +43,10 @@ header {
   background: #22313f;
   color: #fff;
   overflow: hidden;
-  position: relative;
+  position: fixed;
   top: 0;
+  width: 100%;
+  z-index: 3;
 }
 header h1 {
   margin-left: 0.5em;
@@ -83,6 +85,10 @@ header .add:hover {
 .boton:hover {
   background: #1e824c;
 }
+#contenido {
+  position: relative;
+  top: 81px;
+}
 .disabled {
   background: #6c7a89;
   border: 0px solid transparent;
@@ -92,11 +98,24 @@ header .add:hover {
 }
 .proceso {
   color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+.tag {
+  background: #2c3e50;
+  border-top: 2px solid #049372;
+  padding: 1em;
   position: relative;
+  text-align: center;
+  top: 102px;
+}
+.tag .pic {
+  color: #fff;
+  font-size: 2em;
 }
 .tiempo {
   background: #2c3e50;
-  border: 1px solid #22313f;
   font-size: 2em;
   text-align: center;
   padding: 1em 0em;

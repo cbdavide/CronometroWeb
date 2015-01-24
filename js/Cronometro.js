@@ -51,7 +51,7 @@ function Cronometro(){
   };
 
   this.loop = function(){
-    var interval = window.setInterval(function(){
+    this.interval = window.setInterval(function(){
 
       if(estado != 'pause'){
         if(estado == 'avanzar'){
