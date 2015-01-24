@@ -38,16 +38,25 @@ function Cronometro(){
   };
 
   var retroceder = function(){
-    segundos.retroceder();
+    if(segundos.getPosicion() === 0 && minutos.getPosicion() === 0 && horas.getPosicion() === 0){
+      estado = 'pause';
+      console.log('Ya no se puede retroceder más');
+    } else {
+      segundos.retroceder();
+      if(segundos.getPosicion() === 0){
+        if(minutos.getPosicion() === 0 && horas.getPosicion() === 0) {
+          estado = 'pause';
+          console.log('Ya no se puede retroceder más');
+        } else {
+          minutos.retroceder();
 
-    if(segundos.getPosicion() === 0){
-      minutos.retroceder();
-
-      if(minutos.getPosicion() === 0){
-        horas.retroceder();
+          if(minutos.getPosicion() === 0){
+            horas.retroceder();
+          }
+        }
       }
+      notify();
     }
-    notify();
   };
 
   this.loop = function(){
@@ -57,7 +66,7 @@ function Cronometro(){
         if(estado == 'avanzar'){
           avanzar();
         }else if(estado == 'retroceder'){
-          retroceder();
+            retroceder();
         }
         // console.log(horas.getPosicion()+' : '+minutos.getPosicion()+' : '+segundos.getPosicion());
       }
