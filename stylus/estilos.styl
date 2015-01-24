@@ -43,22 +43,32 @@
   content: "\ea0a";
 }
 body
+  background #BFBFBF
+  font-family sans
   font-size 16px
   margin 0
 header
+  background #22313F
+  color white
   overflow hidden
   position relative
   top 0
+  h1
+    margin-left 0.5em
   .add
+    cursor pointer
+    margin 1em 0.5em 0.5em 0em
+    padding 1em
     position absolute
-    top 0
     right 0
-    border 1px solid white
-    border-radius 50%
+    top 0
+    &:hover
+      color #1E824C
 .botones
   background #049372
   position absolute
 .boton
+  cursor pointer
   padding 1.1em 0.3em
   top 0
   position absolute
@@ -71,6 +81,9 @@ header
   &.icon-forward
     // padding-right 0.3em
     right 0
+  &:hover
+    background #1E824C
+    // border-top-color #049372
 
 // .botones
 //   background #049372
@@ -101,17 +114,14 @@ header
     background #6C7A89
 .proceso
   color white
-  // border-top 0.5em solid #049372
-  max-width 400px
+  // max-width 400px
   position relative
 .tiempo
   background #2C3E50
+  border 1px solid #22313F
   font-size 2em
   text-align center
   padding 1em 0em
+  width 100%
 .wrap
   width 100%
-
-@media screen and (max-width:445px)
-  .botones
-    max-width 55%;
