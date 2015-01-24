@@ -9,7 +9,10 @@
   <body>
     <header>
       <h1>Cronómetro</h1>
-      <span id="add"class="add icon-plus"></span>
+      <div class="actions">
+        <span class=" action icon-pause action-disabled" id="pausar"></span>
+        <span id="add"class="action icon-clip"></span>
+      </div>
     </header>
     <section id="contenido">
       <article id="cronometro" class="proceso">
@@ -22,33 +25,9 @@
           <span id="segundos">00</span>
           <span class="boton icon-forward" id="avanzar"></span>
         </div>
-        <div class="botones">
-          <span class="boton icon-pause disabled" id="pausar"></span>
-        </div>
       </article>
       <article class="tag">
-        <sapan class="pic">00 : 20 : 10</sapan>
-      </article>
-      <article class="tag">
-        <sapan class="pic">00 : 45 : 35</sapan>
-      </article>
-      <article class="tag">
-        <sapan class="pic">01 : 00 : 20</sapan>
-      </article>
-      <article class="tag">
-        <sapan class="pic">01 : 00 : 20</sapan>
-      </article>
-      <article class="tag">
-        <sapan class="pic">01 : 00 : 20</sapan>
-      </article>
-      <article class="tag">
-        <sapan class="pic">01 : 00 : 20</sapan>
-      </article>
-      <article class="tag">
-        <sapan class="pic">01 : 00 : 20</sapan>
-      </article>
-      <article class="tag">
-        <sapan class="pic">01 : 00 : 20</sapan>
+        <span class="pic">00 : 20 : 10</span>
       </article>
     </section>
     <script id="cronometro-template" type="x-tmpl-mustache">

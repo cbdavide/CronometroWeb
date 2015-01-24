@@ -66,7 +66,7 @@ function View(crono){
     elementos.btnRetroceder.addEventListener('click',retroceder);
     elementos.btnAvanzar.addEventListener('click',avanzar);
     //Añadir o quitar clase disabled
-    elementos.btnPausa.classList.add('disabled');
+    elementos.btnPausa.classList.add('action-disabled');
     elementos.btnAvanzar.classList.remove('disabled');
     elementos.btnRetroceder.classList.remove('disabled');
     //Pausar
@@ -79,7 +79,7 @@ function View(crono){
     elementos.btnAvanzar.removeEventListener('click',avanzar);
     elementos.btnRetroceder.addEventListener('click',retroceder);
     //Añadir o quitar clase disabled
-    elementos.btnPausa.classList.remove('disabled');
+    elementos.btnPausa.classList.remove('action-disabled');
     elementos.btnAvanzar.classList.add('disabled');
     elementos.btnRetroceder.classList.remove('disabled');
     //Avanzar
@@ -92,7 +92,7 @@ function View(crono){
     elementos.btnAvanzar.addEventListener('click',avanzar);
     elementos.btnRetroceder.removeEventListener('click',retroceder);
     //Añadir o quitar clase disabled
-    elementos.btnPausa.classList.remove('disabled');
+    elementos.btnPausa.classList.remove('action-disabled');
     elementos.btnAvanzar.classList.remove('disabled');
     elementos.btnRetroceder.classList.add('disabled');
     //Retroceder
