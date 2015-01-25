@@ -41,7 +41,7 @@ body
   font-size 16px
   margin 0
 header
-  background #22313F
+  background #333
   color white
   overflow hidden
   position fixed
@@ -61,17 +61,20 @@ header
       margin 0
       padding 2rem 0rem
       &:hover
-        color #1E824C
+        color #00AACC
     .action-disabled
-      color #6C7A89
+      color #333
       &:hover
-        color #6C7A89
+        color #333
+#contenido
+  position relative
+  top 81px
 .boton
   cursor pointer
   padding 1.1em 0.3em
   top 0
   position absolute
-  background #049372
+  // background #049372
   &.icon-backward
     left 0
     // padding-left 0.3em
@@ -79,15 +82,13 @@ header
     // padding-right 0.3em
     right 0
   &:hover
-    background #1E824C
-#contenido
-  position relative
-  top 81px
+    background #00AACC
 .disabled
-  background #6C7A89
+  // background #6C7A89
   border 0px solid transparent
+  color #2C393B
   &:hover
-    background #6C7A89
+    background #2C393B
 .proceso
   color white
   position fixed
@@ -98,8 +99,8 @@ header
   top 102px
 
 .tag
-  background #2C3E50
-  border-top 2px solid #1E824C
+  background #2C393B
+  border-top 3px solid #00AACC
   font-size 2em
   padding 0.7em
   text-align center
@@ -107,8 +108,8 @@ header
     color white
 
 .tiempo
-  background #2C3E50
-  border-bottom 1px solid #22313F
+  background #222B2D
+  border-bottom 2px solid #00AACC
   font-size 2em
   text-align center
   padding 1em 0em

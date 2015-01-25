@@ -33,7 +33,7 @@ body {
   margin: 0;
 }
 header {
-  background: #22313f;
+  background: #333;
   color: #fff;
   overflow: hidden;
   position: fixed;
@@ -57,20 +57,23 @@ header .actions .action {
   padding: 2rem 0rem;
 }
 header .actions .action:hover {
-  color: #1e824c;
+  color: #0ac;
 }
 header .actions .action-disabled {
-  color: #6c7a89;
+  color: #333;
 }
 header .actions .action-disabled:hover {
-  color: #6c7a89;
+  color: #333;
+}
+#contenido {
+  position: relative;
+  top: 81px;
 }
 .boton {
   cursor: pointer;
   padding: 1.1em 0.3em;
   top: 0;
   position: absolute;
-  background: #049372;
 }
 .boton.icon-backward {
   left: 0;
@@ -79,18 +82,14 @@ header .actions .action-disabled:hover {
   right: 0;
 }
 .boton:hover {
-  background: #1e824c;
-}
-#contenido {
-  position: relative;
-  top: 81px;
+  background: #0ac;
 }
 .disabled {
-  background: #6c7a89;
   border: 0px solid transparent;
+  color: #2c393b;
 }
 .disabled:hover {
-  background: #6c7a89;
+  background: #2c393b;
 }
 .proceso {
   color: #fff;
@@ -103,8 +102,8 @@ header .actions .action-disabled:hover {
   top: 102px;
 }
 .tag {
-  background: #2c3e50;
-  border-top: 2px solid #1e824c;
+  background: #2c393b;
+  border-top: 3px solid #0ac;
   font-size: 2em;
   padding: 0.7em;
   text-align: center;
@@ -113,8 +112,8 @@ header .actions .action-disabled:hover {
   color: #fff;
 }
 .tiempo {
-  background: #2c3e50;
-  border-bottom: 1px solid #22313f;
+  background: #222b2d;
+  border-bottom: 2px solid #0ac;
   font-size: 2em;
   text-align: center;
   padding: 1em 0em;
