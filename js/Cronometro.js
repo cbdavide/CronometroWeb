@@ -38,23 +38,17 @@ function Cronometro(){
   };
 
   var retroceder = function(){
-    if(segundos.getPosicion() === 0 && minutos.getPosicion() === 0 && horas.getPosicion() === 0){
+    if(segundos.getPosicion() == 0 && minutos.getPosicion() == 0 && horas.getPosicion() == 0) {
       estado = 'pause';
       console.log('Ya no se puede retroceder más');
-    } else {
-      segundos.retroceder();
-      if(segundos.getPosicion() === 0){
-        if(minutos.getPosicion() === 0 && horas.getPosicion() === 0) {
-          estado = 'pause';
-          console.log('Ya no se puede retroceder más');
-        } else {
-          minutos.retroceder();
-
-          if(minutos.getPosicion() === 0){
-            horas.retroceder();
-          }
-        }
+    }else {
+      if(segundos.getPosicion() == 0 && minutos.getPosicion() == 0) {
+        horas.retroceder();
       }
+      if(segundos.getPosicion() == 0) {
+        minutos.retroceder();
+      }
+      segundos.retroceder();
       notify();
     }
   };
